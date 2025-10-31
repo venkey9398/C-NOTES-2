@@ -1,0 +1,604 @@
+NO.1
+
+   
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    int b;
+    cout<<"Enter ur reg no: akish.";
+    cin>>a;
+    cout<<"enter ur reg no:venkey.";
+    cin>>b;
+    cout<<"akish ur reg no is :"<<a<<endl;
+    cout<<"Venkey ur reg no is :"<<b;
+     return 0;
+}
+
+
+
+NO.2
+
+date types in c++
+datetype help the compiler allocate the appropriate amoumt of
+memory the determine how to interpret the data.
+int >>>> these are used to store interger value (whole number)
+i.e, 1,2,3,4 
+
+
+float >>> used to store decimal value (single precision) >>> i.e 
+10.4,7.7
+
+
+double >>> (double precision) i.e 
+10.777, 4.476
+
+
+char >>> used to store a single character i.e A , D.
+
+
+string >> Is a sequence of character i.e "hello" >>> 'hello' >>> 
+"hello"
+
+ 
+
+No.3
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    string name = "venky";
+    int age = 90;
+    string bloodgroup = "B";
+    float height = 5.8;
+    cout<<"---user information---"<<endl;
+    cout<<"name:"<<name<<endl;
+    cout<<"age:"<<age<<"years"<<endl;
+    cout<<"bloodgroup:"<<bloodgroup<<endl;
+    cout<<"height:"<<height;
+    return 0;
+    
+    
+    
+}
+
+
+
+No.4
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a = 10;
+    int b = 20;
+   cout<<"Logical AND exp1:"<<(a<5&&b>30)<<endl;
+   cout<<"Logical OR exp2:"<<(a<14||b>26)<<endl;
+   cout<< "Logical NOT exp3: "<< !(a>6);
+   return 0;
+}
+
+
+
+No.5
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout<<"Enter a number:";
+    cin>>a;
+    if (a%2==0)
+    {
+        cout<<a<<"is even!";
+    }
+    else
+    {
+        cout<<a<<"is odd";
+    }
+    return 0;
+} 
+
+No.6
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a=10;
+    if (a%2==0)
+    {
+        cout<<a<<" damn its an even number!";
+    }
+    else 
+    {
+        cout<<a<<" damn its an odd number!";
+    }    
+    
+    return 0;
+    
+    
+}
+
+{
+    int a=10;
+    if (a%2==0)
+    {
+        cout<<a<<" damn its an even number!";
+    }
+    else 
+    {
+        cout<<a<<" damn its an odd number!";
+    }    
+    
+    return 0;
+    
+    
+}
+
+
+No.7
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout<<"enter your age:";
+    cin>>a;
+    if (a>=18)
+    {
+        cout<<"your are eligible to vote!";
+    }
+    else
+    {
+        int years_left = 18-a;
+        cout<<"you are still a kid!";
+        cout<<" you have to wait for"<< years_left<<"year";
+    }
+
+    return 0;
+    
+}
+
+
+No.8
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num1,num2,num3;
+    cout<<"Enter three number:";
+    cin>>num1>>num2>>num3;
+    if(num1>=num2 && num1>num3)
+    {
+        cout<<num1<<" is the largest number";
+        
+    }
+    else if(num2>=num1 && num2>=num3)
+    {
+        cout<<num2<<"is the largest no.";
+    }
+    else
+    {
+        cout<<num3<<"is the largest no.";
+        
+    }
+    return 0;
+}
+
+
+No.9 (Theory)
+
+
+
+Loop in C++
+
+Loops in C++ are used to execute a block of code repeatedly until a certain condition is met.
+they help in manage repetitive tasks
+
+
+1. For loop
+used when the number of iterations is known before head.
+
+
+
+2. While loop
+used when the number of iterations is not known and depends on condition
+
+
+
+3. Do-while loop
+similar to the while loop , but guarantees that the block of code will be executed at least once
+before checking the condition.
+
+
+N0.10
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i=1;
+    while (i<=5)
+    {
+        cout<<i<<endl;
+        i++;
+    }
+    return 0;
+}
+
+
+
+
+No.11
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    for (int i=1; i<=5; i++)
+    {
+        cout<<i<<endl;
+    }
+    return 0;
+}
+
+
+
+No.12
+
+
+include<iostream>
+using namespace std;
+void greet()
+
+{
+cout<<"happy birthaday!"<<endl;    
+}
+int main()
+{
+    greet();
+    return 0;
+}
+
+
+
+
+No.13
+
+
+
+
+#include<iostream>
+using namespace std;
+int add(int a,int b)
+{
+    return a+b;
+}
+int mul(int a,int b)
+{
+    return a*b;
+}
+int sub(int a,int b)
+{
+    return a-b;
+}
+int main()
+{
+    cout<<"addition:"<<add(5,10)<<endl;
+    cout<<"substration:"<<sub(5,10)<<endl;
+    cout<<"multilplication:"<<mul(5,10);
+    return 0;
+}
+
+
+
+No.14
+
+
+
+
+ #include<iostream>
+using namespace std;
+int add(int a,int b)
+{
+    return a+b;
+}
+int mul(int a,int b)
+{
+    return a*b;
+}
+int sub(int a,int b)
+{
+    return a-b;
+}
+
+float div1(int a,int b)
+{
+    if(b==0)
+    {
+        cout<<"Division by zero!!infinite"<<endl;
+        return 0;
+        
+    }
+    return (float)a/b;
+    }
+int main()
+{
+    cout<<"addition:"<<add(5,10)<<endl;
+    cout<<"substration:"<<sub(5,10)<<endl;
+    cout<<"multilplication:"<<mul(5,10)<<endl;
+    cout<<"division:"<<div1(5,10);
+    return 0;
+}
+
+
+
+No.15
+ 
+
+
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int day;
+    cout<<"enter a number(1-7) corresponding to the day of the week:";
+    cin>>day;
+    switch(day)
+    {
+        case 1:
+        cout<<"Monday"<<endl;
+        break;
+        case 2:
+        cout<<"Tuesday"<<endl;
+        break;
+         case 3:
+        cout<<"wednesday"<<endl;
+        break;
+         case 4:
+        cout<<"Thursday"<<endl;
+        break;
+         case 5:
+        cout<<"Friday"<<endl;
+        break;
+         case 6:
+        cout<<"Saturday"<<endl;
+        break;
+         case 7:
+        cout<<"Sunday"<<endl;
+        break;
+        default:
+        cout<<"invalid input! please enter a number between 1 and 7"<<endl;
+        brea
+        
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+No.16
+
+
+
+#include <iostream>
+using namespace std; 
+
+class car{
+    string brand;
+    string model;
+    int price;
+    int year;
+}
+
+int main(){
+    car car1;//creating an object of the class car
+    car1.brand="BMW"
+    car1.model="B-class";
+    car1.price=5000000;
+    car1.year=2024
+    
+    return 0;
+}
+}
+
+
+NO.17
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+ class Teacher
+ {
+ private:
+ //date members
+     string name;
+     string subject;
+     int years;
+ public:
+     void setdetail(string tname,string tsubject,int tyears)
+     {
+           name = tname;
+           subject = tsubject;
+           years = tyears;
+     }
+     //member function
+     void display()
+     {
+         cout<<",name: "<<name<<endl;
+        cout<<",subject: "<<subject<<endl;
+        cout<<",years: "<<years<<endl;
+     }
+};
+
+
+int main()
+{
+    Teacher t1,t2,t3;
+     
+     t1.setdetail("veneky","electronic",87);
+     t2.setdetail("akish","maths",82);
+     t3.setdetail("pavan","physics",98);
+     
+     
+     t1.display();
+     t2.display();
+     t3.display();
+     return 0;
+}                                        
+
+
+No.18
+
+#include<iostream>
+using namespace std;
+class car
+{
+   public:
+   string make;
+   string model;
+   int year;
+
+   car()
+   {
+    make="wghc";
+    model="h-series";
+    year=73865;
+   }
+void displayinfo()
+{
+    cout<<year<<""<<model<<endl;
+    
+}
+};
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    car mycar
+    mycar.displayinfo();
+    return 0;
+}
+
+
+No.19
+
+
+#include<iostream>
+using namespace std;
+class teacher
+{
+   public:
+   string name;
+   string subject;
+   int salary;
+   int years;
+   teacher()
+   
+{
+    name="arib";
+    subject="c++";
+    years=10;
+    salary=75000;
+    cout<<"name of the master is:   "<<name<<endl;
+    cout<<"the subject teached is: "<<subject<<endl;
+    cout<<"years of experience:     "<<years<<endl;
+    cout<<"salary he gotted:        "<<salary<<endl;
+    
+}
+};
+
+int main(){
+    
+
+teacher myteacher;
+
+return 0;
+}
+
+
+NO.20
+
+
+#include<iostream>
+using namespace std;
+class movie
+{
+    public:
+    string tittle;
+    string director;
+    double duriation;
+    
+    
+     
+     movie()
+     {
+         tittle="umbu";
+         director="akish";
+         duriation=3.40;
+     }
+        void displayinfo()
+        {
+        cout<<"tittle:   "<<tittle<<endl;
+        cout<<"director: "<<director<<endl;
+        cout<<"duriation: "<<duriation<<endl;
+        }
+};
+
+int main()
+{
+movie mymovie;
+mymovie.displayinfo();
+return 0;
+    
+}
+
+No.21
+
+#include<iostream>
+using namespace std;
+class parent
+{
+    public:
+    void food()
+    {
+        cout<<"inherited,burger";
+        
+    }
+    };
+    class child:public parent
+    {};
+    int main()
+    {
+        
+        child b;
+        b.food();
+        return 0;
+    }
